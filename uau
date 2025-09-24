@@ -1,0 +1,105 @@
+# ==========================
+# Exemplo 1 – Loop de 0 a 10
+# ==========================
+loop = 0
+
+while loop <= 10:
+    print(loop)
+    loop += 1
+
+print("\n--- Fim do Exemplo 1 ---\n")
+
+# =============================
+# Exemplo 2 – Validação de senha
+# =============================
+senha_correta = "1234"
+tentativa = ""
+
+while tentativa != senha_correta:
+    tentativa = input("Digite a senha: ")
+
+print("Acesso permitido!")
+
+print("\n--- Fim do Exemplo 2 ---\n")
+
+# ==================================
+# Exemplo 3 – Contador com 'break'
+# ==================================
+contador = 1
+
+while True:
+    print('Contador:', contador)
+    if contador == 3:
+        print("Parando o loop com break")
+        break
+    contador += 1
+
+print("\n--- Fim do Exemplo 3 ---\n")
+
+# ========================================
+# Exemplo 4 – 'continue' pulando número 3
+# ========================================
+contador = 0
+
+while contador < 5:
+    contador += 1
+    if contador == 3:
+        print("Pulando o número 3")
+        continue
+    print("Número:", contador)
+
+print("\n--- Fim do Exemplo 4 ---\n")
+
+# =============================================
+# Atividade 01 – Contador até 10 com 'break'
+# =============================================
+contador = 1
+
+while True:
+    print('Contador:', contador)
+    if contador == 10:
+        print("Parando o loop com break")
+        break
+    contador += 1
+
+print("\n--- Fim da Atividade 01 ---\n")
+
+# ===================================================
+# Atividade 02 – Entrada de nomes até digitar 'sair'
+# ===================================================
+while True:
+    nome = input("Digite um nome (ou 'sair' para encerrar): ")
+    if nome.lower() == "sair":
+        print("Encerrado.")
+        break
+    print("Seu nome é:", nome)
+
+print("\n--- Fim da Atividade 02 ---\n")
+
+# ======================================================
+# Atividade 03 – Pular o número 5 (aluno com atestado)
+# ======================================================
+lista_presenca = 0
+
+while lista_presenca < 10:
+    lista_presenca += 1
+    if lista_presenca == 5:
+        print("Pulando aluno de atestado")
+        continue
+    print("Número:", lista_presenca)
+
+print("\n--- Fim da Atividade 03 ---\n")
+
+# =================================================
+# Atividade 04 – Três tentativas, caixa bloqueado
+# =================================================
+tentativas = 1
+
+while True:
+    print("Contador:", tentativas)
+    if tentativas == 3:
+        print("Caixa bloqueado!")
+        break
+    tentativas += 1
+
+print("\n--- Fim da Atividade 04 ---\n")
